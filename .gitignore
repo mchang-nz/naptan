@@ -167,3 +167,6 @@ cython_debug/
 # csv outputs
 tmp/naptan_clean.csv
 tmp/naptan_raw.csv
+
+# other
+.python-version
