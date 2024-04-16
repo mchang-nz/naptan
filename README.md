@@ -5,7 +5,8 @@
 
 ## Running The Project Locally
 ### Requirements:
-- Python version 3.12.2
+- Python version >3.11.8
+
 ### Steps:
 1. Clone the following repository:
     ```sh
@@ -13,14 +14,15 @@
 
     cd dagster-quickstart
     ```
-2. Clone the following repository:
-    ```sh
-    git clone https://github.com/dagster-io/dagster-quickstart
 
-    cd dagster-quickstart
+    Start a python venv (recommended):
+    ```sh
+    python -m venv myenv
+
+    source myenv/bin/activate
     ```
 
-3. Install the required dependencies.
+2. Install the required dependencies.
 
     Here we are using `-e`, for ["editable mode"](https://pip.pypa.io/en/latest/topics/local-project-installs/#editable-installs), so that when Dagster code is modified, the changes automatically apply. 
 
@@ -28,7 +30,7 @@
     pip install -e ".[dev]"
     ```
 
-4. Run the project!
+3. Run the project!
 
     ```sh
     dagster dev
